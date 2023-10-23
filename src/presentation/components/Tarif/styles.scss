@@ -1,0 +1,77 @@
+$tarif-color-1: rgb(8, 181, 193);
+$tarif-color-2: green;
+$tarif-color-3: coral;
+$tarif-color-4: black;
+
+.tarif {
+  &_container {
+    text-align: center;
+    margin-top: 2%;
+  }
+  &_item {
+    padding: 3%;
+    border: 1px solid white;
+  }
+  &_title {
+    color: white;
+    flex: 1;
+    text-align: center;
+  }
+
+  &_price {
+    color: white;
+    flex: 2;
+    font-size: xx-large;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+    &:after {
+      content: '/мес';
+      font-size: x-small;
+    }
+
+    &:before {
+      content: 'руб';
+      font-size: x-small;
+      position: absolute;
+      left: 28%;
+      top: 29%;
+    }
+  }
+
+  &_speed {
+    font-size: small;
+    color: rgb(149, 149, 149);
+    flex: 1;
+    background-color: white;
+  }
+
+  &_details {
+    background-color: rgb(247, 246, 246);
+    font-size: small;
+    color: darkgray;
+    flex: 1;
+  }
+}
+
+.large {
+  transform: scale(1, 1.05);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tarif-color-1 {
+  background-color: $tarif-color-1;
+}
+
+.tarif-color-2 {
+  background-color: $tarif-color-2;
+}
+
+.tarif-color-3 {
+  background-color: $tarif-color-3;
+}
+
+.tarif-color-4 {
+  background-color: $tarif-color-4;
+}
